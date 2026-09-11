@@ -1,7 +1,8 @@
 import logo from '../assets/logo-text.png'
 export function Nav() {
   return (
-    <nav className="flex items-center justify-between px-8 py-4 bg-white shadow-md">
+    <nav className="w-full bg-white shadow-md">
+        <div className="container mx-auto flex items-center justify-between px-8 py-4">
       <img src={logo} className="logo"/>
       <ul className="flex space-x-4 text-gray-700">
         <li className="text-pink-500 font-bold">Home</li>
@@ -13,6 +14,7 @@ export function Nav() {
       <div className="flex space-x-4">
       <button className="btn btn-ghost">Sign In</button>
       <button className="btn btn-secondary">Sign Up</button>
+      </div>
       </div>
     </nav>
   )
